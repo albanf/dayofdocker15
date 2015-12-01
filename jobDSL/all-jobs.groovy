@@ -20,9 +20,9 @@ job("${FIRST_JOB_NAME}") {
       branch('master')
       configure {
         it / 'extensions' << 'hudson.plugins.git.extensions.impl.PathRestriction' {
-          'includedRegions' '''GoWebBrowser/.*\\.go
-GoWebBrowser/.*\\.html
-GoWebBrowser/.*\\.png
+          'includedRegions' '''GoWebServer/.*\\.go
+GoWebServer/.*\\.html
+GoWebServer/.*\\.png
 version\\.txt'''
         }
       }
