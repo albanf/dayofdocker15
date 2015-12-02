@@ -7,7 +7,7 @@ PROJ_NAME="webserver"
 REPO_URL="https://github.com/${GITHUB_USERNAME}/dayofdocker15.git"
 
 // Configured to use to define the build pipeline as well
-FIRST_JOB_NAME="1.build-${PROJ_NAME}_GEN"
+FIRST_JOB_NAME="1.modified.build-${PROJ_NAME}_GEN"
 
 job("${FIRST_JOB_NAME}") {
   logRotator( -1, 5 ,-1 ,-1 )
